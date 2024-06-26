@@ -28,7 +28,7 @@ def summarize_text(input_text):
     chat_session = model.start_chat(history=[])
 
 
-    prompt = f"Please summarize the following text in short:\n\n{input_text}"
+    prompt = f"Please summarize the following text in short to below 50% shorter:\n\n{input_text}"
     response = chat_session.send_message(prompt)
 
 
